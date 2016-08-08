@@ -1,0 +1,298 @@
+// Padrão de Cores
+$main-color: #ee731c;
+$black-color: #000;
+$laranja-2: #e6530f;
+$bg_titulos: #f6ecdd;
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+// Padrões do Site
+.margin-center{
+	margin: 0 auto;
+	max-width:1140px;
+}
+.display-in{
+	display:inline-block;
+}
+.clear{
+	clear:both;
+}
+
+h1{
+	font-weight:800;
+	font-size:40px;
+}
+h2{
+	font-weight:600;
+	font-size:30px;
+}
+h3{
+	font-weight:400;
+	font-size:20px;
+}
+a{
+	color:$black-color;
+}
+a:hover{
+	opacity:0.7;
+}
+
+header{
+	height:80px;
+	width:100%;
+	background: $main-color;
+	
+	.top{
+		@extend .margin-center;
+		
+		h1{
+			width:300px;
+			float:left;
+			padding-top:12px;
+			padding-left: 10px;
+		}
+		.menu{
+			list-style:none;
+			float:right;
+			position: relative;
+			top:20px;
+			
+			li{
+				@extend .display-in;
+				padding: 5px 12px;
+				text-align:right;
+
+				a{
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
+.banner{
+	height:auto;
+
+	img{
+		width:100%;
+		height: auto;
+	}
+}
+
+.acoes{
+	text-align: center;
+
+	h1{
+		margin: 20px auto;
+		text-transform:uppercase;
+		
+	}
+	p{
+		max-width:80%;
+		margin-bottom: 20px;
+		@extend .margin-center;
+		
+	}
+	ul{
+		list-style:none;
+		text-align:center;
+
+		li{
+			@extend .display-in;
+			margin:2px 0;
+			height:155px;
+			overflow:hidden;
+			
+			&:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
+				width:160px;
+			}
+			
+		}
+	}
+}
+
+.noticias{
+	width: 100%;
+	margin:20px 0;
+	position: relative;
+	background: $main-color;
+	padding-bottom: 10px;
+	
+	h1{
+		text-align:center;
+		position:relative;
+		text-transform: uppercase;
+		top: 20px;
+		bottom:20px;
+
+	}
+	ul{
+		list-style:none;
+
+		li{
+			@extend .display-in;
+			width: 25%;
+			padding: 10px 5px;
+			box-sizing: border-box;
+			float:left;
+			margin: 20px 0;
+
+			.date{
+				color: #fff;
+				font-size: 12px;
+			}
+		}
+	}
+	.mais-noticias{
+		float:right;
+	}
+}
+.destaque{
+	.img-destaque{
+		float:left;
+		margin-right:15px;
+		width:500px;
+		height: auto;
+		overflow:hidden;
+
+		img{
+			width:100%;
+			height: auto;
+		}
+	}
+	.not-destaque{
+		width:600px;
+		float:right;
+		.date{
+			color: #555;
+			margin:10px 0;
+		}
+		a{
+			background: $main-color;
+			padding: 10px 15px;
+			border-radius: 4px;
+			color:#fff;
+			text-decoration:none;
+			float:left;
+			margin-top:15px;
+		}
+	}
+}
+.links{
+	width:100%;
+	height: 35px;
+	text-align:center;
+	display:block;
+	clear:both;
+	margin:10px 0;
+	li{
+		@extend .display-in;
+		border-right:1px solid #333;
+		padding: 2px 15px;
+		margin-top:10px;
+		font-weight:800;
+		text-transform:uppercase;
+		a{
+			text-decoration: none;
+		}
+		&:last-child{
+			border-right:0;
+		}
+		button{
+			background: none;
+			font-weight:800;
+			text-transform:uppercase;
+			border:none;
+			cursor:pointer;
+			position:relative;
+			padding: 2px 15px;
+			font-size: 16px;
+			&::after{
+				position:absolute;
+				width:20px;
+				height:20px;
+				display:block;
+				content:" ";
+				background:url(images/ic-search.png) top center no-repeat;
+				right:-15px;
+				top:3px;
+			}
+		}
+		
+	}
+}
+.search{
+	height:30px;
+	background:$bg_titulos;
+	width:100%;
+	display:none;
+	padding: 15px 0;
+	
+		form{
+			width:500px;
+			margin: 0 auto;
+
+		input[type="text"]{
+		height:30px;
+		width:320px;
+		padding-left:5px;
+		}
+		input[type="submit"]{
+			background:$main-color;
+			color: #fff;
+			height:32px;
+			padding:3px 15px;
+			cursor: pointer;
+			border:none;
+			text-transform: uppercase;
+		}
+	}
+
+}
+footer{
+	background: $main-color;
+	text-align:center;
+
+	h3{
+		
+		margin:10px auto;
+	}
+	p{
+		font-size:13px;
+		text-transform:uppercase;
+		margin:5px 0;
+	}
+	ul{
+		text-decoration:none;
+		li{
+			@extend .display-in;
+			margin:10px 5px;
+			
+		}
+	}
+	.realizacao{
+		display:block;
+		position:relative;
+		top:10px;
+
+		img{
+				height:65px;
+				width:auto;
+			}
+	}
+	.parceiros{
+		img{
+			height:45px;
+			width:auto;
+		}
+	}
+	.creditos{
+		background: #e6530f;
+		padding:10px 0;
+		font-size:12px;
+	}
+}

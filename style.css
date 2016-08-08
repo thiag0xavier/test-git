@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.margin-center, header .top, .acoes p {
+  margin: 0 auto;
+  max-width: 1140px; }
+
+.display-in, header .top .menu li, .acoes ul li, .noticias ul li, .links li, footer ul li {
+  display: inline-block; }
+
+.clear {
+  clear: both; }
+
+h1 {
+  font-weight: 800;
+  font-size: 40px; }
+
+h2 {
+  font-weight: 600;
+  font-size: 30px; }
+
+h3 {
+  font-weight: 400;
+  font-size: 20px; }
+
+a {
+  color: #000; }
+
+a:hover {
+  opacity: 0.7; }
+
+header {
+  height: 80px;
+  width: 100%;
+  background: #ee731c; }
+  header .top h1 {
+    width: 300px;
+    float: left;
+    padding-top: 12px;
+    padding-left: 10px; }
+  header .top .menu {
+    list-style: none;
+    float: right;
+    position: relative;
+    top: 20px; }
+    header .top .menu li {
+      padding: 5px 12px;
+      text-align: right; }
+      header .top .menu li a {
+        text-decoration: none; }
+
+.banner {
+  height: auto; }
+  .banner img {
+    width: 100%;
+    height: auto; }
+
+.acoes {
+  text-align: center; }
+  .acoes h1 {
+    margin: 20px auto;
+    text-transform: uppercase; }
+  .acoes p {
+    max-width: 80%;
+    margin-bottom: 20px; }
+  .acoes ul {
+    list-style: none;
+    text-align: center; }
+    .acoes ul li {
+      margin: 2px 0;
+      height: 155px;
+      overflow: hidden; }
+      .acoes ul li:nth-of-type(3), .acoes ul li:nth-of-type(4), .acoes ul li:nth-of-type(5) {
+        width: 160px; }
+
+.noticias {
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+  background: #ee731c;
+  padding-bottom: 10px; }
+  .noticias h1 {
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    top: 20px;
+    bottom: 20px; }
+  .noticias ul {
+    list-style: none; }
+    .noticias ul li {
+      width: 25%;
+      padding: 10px 5px;
+      box-sizing: border-box;
+      float: left;
+      margin: 20px 0; }
+      .noticias ul li .date {
+        color: #fff;
+        font-size: 12px; }
+  .noticias .mais-noticias {
+    float: right; }
+
+.destaque .img-destaque {
+  float: left;
+  margin-right: 15px;
+  width: 500px;
+  height: auto;
+  overflow: hidden; }
+  .destaque .img-destaque img {
+    width: 100%;
+    height: auto; }
+.destaque .not-destaque {
+  width: 600px;
+  float: right; }
+  .destaque .not-destaque .date {
+    color: #555;
+    margin: 10px 0; }
+  .destaque .not-destaque a {
+    background: #ee731c;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    margin-top: 15px; }
+
+.links {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  display: block;
+  clear: both;
+  margin: 10px 0; }
+  .links li {
+    border-right: 1px solid #333;
+    padding: 2px 15px;
+    margin-top: 10px;
+    font-weight: 800;
+    text-transform: uppercase; }
+    .links li a {
+      text-decoration: none; }
+    .links li:last-child {
+      border-right: 0; }
+    .links li button {
+      background: none;
+      font-weight: 800;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      padding: 2px 15px;
+      font-size: 16px; }
+      .links li button::after {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: block;
+        content: " ";
+        background: url(images/ic-search.png) top center no-repeat;
+        right: -15px;
+        top: 3px; }
+
+.search {
+  height: 30px;
+  background: #f6ecdd;
+  width: 100%;
+  display: none;
+  padding: 15px 0; }
+  .search form {
+    width: 500px;
+    margin: 0 auto; }
+    .search form input[type="text"] {
+      height: 30px;
+      width: 320px;
+      padding-left: 5px; }
+    .search form input[type="submit"] {
+      background: #ee731c;
+      color: #fff;
+      height: 32px;
+      padding: 3px 15px;
+      cursor: pointer;
+      border: none;
+      text-transform: uppercase; }
+
+footer {
+  background: #ee731c;
+  text-align: center; }
+  footer h3 {
+    margin: 10px auto; }
+  footer p {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 5px 0; }
+  footer ul {
+    text-decoration: none; }
+    footer ul li {
+      margin: 10px 5px; }
+  footer .realizacao {
+    display: block;
+    position: relative;
+    top: 10px; }
+    footer .realizacao img {
+      height: 65px;
+      width: auto; }
+  footer .parceiros img {
+    height: 45px;
+    width: auto; }
+  footer .creditos {
+    background: #e6530f;
+    padding: 10px 0;
+    font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */
